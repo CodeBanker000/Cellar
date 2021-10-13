@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.mtank.cellar">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddCategory"
+            android:label="@string/add_category"
+            android:parentActivityName=".Main">
+        </activity>
+        <activity
+            android:name=".CategoryManager"
+            android:label="@string/management_category"
+            android:parentActivityName=".Main">
+        </activity>
+        <activity
+            android:name=".UpdateCategory"
+            android:label="@string/update_category"
+            android:parentActivityName=".CategoryManager">
+        </activity>
+        <activity
+            android:name=".AddProduct"
+            android:label="@string/add_product"
+            android:parentActivityName=".Main">
+        </activity>
+        <activity
+            android:name=".ProductManager"
+            android:label="@string/management_product"
+            android:parentActivityName=".Main">
+        </activity>
+        <activity
+            android:name=".UpdateProduct"
+            android:label="@string/update_product"
+            android:parentActivityName=".ProductManager">
+        </activity>
+        <activity
+            android:name=".SendInventories"
+            android:label="@string/send_inventories"
+            android:parentActivityName=".Main">
+        </activity>
+        <activity
+            android:name=".StatiticSales"
+            android:label="@string/graph"
+            android:parentActivityName=".Main">
+        </activity>
+    </application>
+
+</manifest>

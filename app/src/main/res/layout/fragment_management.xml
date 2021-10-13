@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/add_category_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_category"
+        android:textColor="@color/colorTextButton"/>
+
+    <Button
+        android:id="@+id/category_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/management_category"
+        android:textColor="@color/colorTextButton"/>
+
+    <Button
+        android:id="@+id/add_product_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_product"
+        android:textColor="@color/colorTextButton" />
+
+    <Button
+        android:id="@+id/product_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/management_product"
+        android:textColor="@color/colorTextButton"/>
+
+    <Button
+        android:id="@+id/inventories_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_inventories"
+        android:textColor="@color/colorTextButton"/>
+
+    <Button
+        android:id="@+id/graph_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/graph"
+        android:textColor="@color/colorTextButton"/>
+
+</LinearLayout>

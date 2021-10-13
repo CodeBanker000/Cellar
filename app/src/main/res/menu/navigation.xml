@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_sales"
+        android:icon="@drawable/icon_sell_black"
+        android:title="@string/title_sales"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_purchased"
+        android:icon="@drawable/icon_buy_black"
+        android:title="@string/title_purchased"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_orders"
+        android:icon="@drawable/icon_orders_black"
+        android:title="@string/title_orders"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_management"
+        android:icon="@drawable/icon_back_side"
+        android:title="@string/title_management"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+
+</menu>

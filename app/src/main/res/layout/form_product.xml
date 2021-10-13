@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/spinner_layout"></include>
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/product_hint"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/category_spinner" />
+
+    <EditText
+        android:id="@+id/company_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/company_hint"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/name_input" />
+
+    <Spinner
+        android:id="@+id/denomination_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/denomination_array"
+        app:layout_constraintTop_toBottomOf="@+id/company_input" />
+
+    <EditText
+        android:id="@+id/year_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:hint="@string/year_hint"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/denomination_spinner" />
+
+    <CheckBox
+        android:id="@+id/bio_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/year_input"
+        app:layout_constraintTop_toBottomOf="@+id/denomination_spinner" />
+
+    <EditText
+        android:id="@+id/minimum_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:hint="@string/minimum_hint"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/quantity_input"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year_input" />
+
+    <EditText
+        android:id="@+id/quantity_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:hint="@string/quantity_hint"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/pos_input"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/minimum_input"
+        app:layout_constraintTop_toBottomOf="@+id/year_input" />
+
+    <EditText
+        android:id="@+id/pos_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:hint="@string/pos_hint"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/price_input"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/quantity_input"
+        app:layout_constraintTop_toBottomOf="@+id/year_input" />
+
+    <EditText
+        android:id="@+id/price_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:hint="@string/price_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/quantity_input"
+        app:layout_constraintTop_toBottomOf="@+id/year_input" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_submit"
+        android:textColor="@color/colorTextButton"
+        android:drawableLeft="@drawable/icons_salva_grey_24"
+        app:layout_constraintTop_toBottomOf="@id/quantity_input"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</merge>
